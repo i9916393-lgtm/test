@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | FotoLab</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+   <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+  <nav class="navbar  navbar-expand-lg navbar-light">
+
+    <div class="container-fluid">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" id="logo" href="#">
+        <img  src="images\final logo.png" alt="FotoLab">
+      </a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+
+          <!-- Cameras Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="cameras.html" role="button" data-bs-toggle="dropdown">
+              Cameras
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cameras.html">DSLR Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Mirrorless Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+               <li><a class="dropdown-item" href="cameras.html">Bridge Cameras</a></li>
+                <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+                 <li><a class="dropdown-item" href="cameras.html">ProfessionalCameras</a></li>
+                  <li><a class="dropdown-item" href="cameras.html">Rugged Cameras</a></li>
+            </ul>
+          </li>
+
+          <!-- Accessories Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Accessories.html" role="button" data-bs-toggle="dropdown">
+            Accessories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Accessories.html">Tripods & Supports</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Camera Bags & Cases</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Lighting & Studio</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Filter & Lens Accessories</a></li>
+             <li><a class="dropdown-item" href="Accessories.html">Cleaning & Maintenance</a></li>
+              <li><a class="dropdown-item" href="Accessories.html">Batteries & Chargers</a></li>
+               <li><a class="dropdown-item" href="Accessories.html">Cables & Adapters</a></li>
+                <li><a class="dropdown-item" href="Accessories.html">Miscellaneous Accessories</a></li>
+          </ul>
+        </li>
+          <!-- Lenses Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lences.html" role="button" data-bs-toggle="dropdown">
+              Lenses
+            </a>
+            <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="lences.html">Prime Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Zoom Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Wide Angle Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Telephoto Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Macro Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Portrait Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Standard Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Cine / Video Lenses</a></li>
+            </ul>
+          </li>
+   <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="drone cameras.html" role="button" data-bs-toggle="dropdown">
+            Drone Cameras
+            </a>
+            <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="drone cameras.html">Camera Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Professional / Cinema Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Beginner Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Mini / Compact Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">FPV Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Long Range Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Industrial / Commercial Drones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+        
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Cart Icon -->
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#">
+              <i class="bi bi-cart fs-5"></i>
+              <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                0
+              </span>
+            </a>
+          </li>
+
+        </ul>
+        <form class="d-flex" id="searchForm">
+          <input id="siteSearch" class="form-control me-2" type="search" placeholder="Search products & videos"
+            aria-label="Search">
+
+          <button id="searchBtn" type="button" class="btn btn-dark">
+            <i class="bi bi-search"></i>
+          </button>
+
+
+
+        </form>
+
+
+      </div>
+
+
+  </nav>
+ 
+<section class="about">
+  <div class="about-us">
+    <div class="about-img">
+      <img src="images/professional-slr-camera-closeup-covered-snow-camera-is-thrown-into-snow_811250-3049.jpg" alt="Camera Store">
+    </div>
+    <div class="about-content">
+      <h1>About Us</h1>
+      <p>
+        Welcome to FotoLab, your trusted destination for high-quality cameras and photography accessories.
+        We provide a wide range of DSLR cameras, mirrorless cameras, action cameras, lenses, tripods, and camera
+        accessories from top brands. Our goal is to help photographers, content creators, and beginners find the
+        perfect equipment for their needs.
+      </p>
+      <p>
+        At FotoLab, we believe that every moment is worth capturing. That’s why we focus on authentic products,
+        affordable prices, and excellent customer service. Whether you are a professional photographer or just
+        starting your photography journey, we are here to support you.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ===== HERO SLIDER ===== -->
+<div id="heroSlider" class="carousel slide carousel-fade hero-slider" data-bs-ride="carousel" data-bs-interval="6000">
+<canvas id="bg-canvas"></canvas>
+
+  <!-- Progress Bar -->
+  <div class="slider-progress"></div>
+
+  <div class="carousel-inner">
+
+    <!-- VIDEO SLIDE -->
+    <div class="carousel-item active">
+      <div class="hero-slide video-slide">
+        <video autoplay muted loop playsinline>
+          <source src="videos/camera.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay">
+          <h1>Capture the Future</h1>
+          <p>Professional Cameras • Cinematic Gear</p>
+
+          <div class="hero-btns">
+            <a href="cameras.html" class="btn btn-danger">Shop Cameras</a>
+            <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE SLIDE -->
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image:url('images/banner3.jpg')">
+        <div class="hero-overlay">
+          <h1>Create Without Limits</h1>
+          <p>Photography • Videography • Drones</p>
+          <div class="hero-btns">
+            <a href="Accessories.html" class="btn btn-danger">Explore Gear</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>FotoLab is your one-stop shop for cameras, lenses, and accessories. We provide high-quality products for
+            photography enthusiasts and professionals.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="Index.html">Home</a><br>
+          <a href="cameras.html">Products</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <a href="cameras.html">DSLR Cameras</a><br>
+          <a href="cameras.html">Mirrorless Cameras</a><br>
+          <a href="cameras.html">Action Cameras</a><br>
+          <a href="cameras.html">Accessories</a>
+        </div>
+
+        <!-- Social & Contact -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p style="margin-top:15px;" ><a href="mailto:info@fotolab.com">
+
+         Email: info@fotolab.com </a><br>Phone: +123 456 7890</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="footer-bottom">
+        &copy; 2026 FotoLab. All Rights Reserved.
+      </div>
+    </footer>
+
+<button id="darkToggle" class="dark-toggle"><span id="toggleIcon">🌙</span></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Scroll Navbar
+  window.addEventListener("scroll", () => {
+    document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 20);
+  });
+
+  // Dark Mode
+  const toggle = document.getElementById("darkToggle");
+  const icon = document.getElementById("toggleIcon");
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark");
+    icon.textContent = document.body.classList.contains("dark") ? "🌞" : "🌙";
+  };
+
+  // Hover Dropdown
+  document.querySelectorAll('.navbar .dropdown').forEach(drop => {
+    drop.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 992) {
+        drop.classList.add('show');
+        drop.querySelector('.dropdown-menu').classList.add('show');
+      }
+    });
+    drop.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 992) {
+        drop.classList.remove('show');
+        drop.querySelector('.dropdown-menu').classList.remove('show');
+      }
+    });
+  });
+</script>
+<script>
+  window.addEventListener("scroll", () => {
+    document.querySelectorAll(".hero-slide").forEach(slide => {
+      slide.style.backgroundPositionY = -(window.scrollY * 0.3) + "px";
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+  const slides = document.querySelectorAll(".carousel-item");
+
+  slides.forEach(slide => {
+    slide.addEventListener("shown.bs.carousel", () => {
+      gsap.fromTo(
+        slide.querySelectorAll("h1, p, .hero-btns"),
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.15, duration: 1, ease: "power3.out" }
+      );
+    });
+  });
+
+  // Progress bar animation
+  const progress = document.querySelector(".slider-progress");
+  const interval = 6000;
+
+  function startProgress() {
+    progress.style.transition = "none";
+    progress.style.width = "0";
+    setTimeout(() => {
+      progress.style.transition = `width ${interval}ms linear`;
+      progress.style.width = "100%";
+    }, 50);
+  }
+
+  document.getElementById("heroSlider").addEventListener("slide.bs.carousel", startProgress);
+  startProgress();
+</script>
+<script>
+  const hero = document.querySelector(".hero-slider");
+
+  hero.addEventListener("mousemove", e => {
+    const x = (window.innerWidth / 2 - e.pageX) / 40;
+    const y = (window.innerHeight / 2 - e.pageY) / 40;
+
+    gsap.to(".hero-overlay", {
+      x: x,
+      y: y,
+      duration: 0.6,
+      ease: "power2.out"
+    });
+  });
+
+  hero.addEventListener("mouseleave", () => {
+    gsap.to(".hero-overlay", {
+      x: 0,
+      y: 0,
+      duration: 0.8
+    });
+  });
+</script>
+<script>
+  const slideSound = new Audio("sounds/slide.mp3");
+  slideSound.volume = 0.25;
+
+  document.getElementById("heroSlider")
+    .addEventListener("slide.bs.carousel", () => {
+      slideSound.currentTime = 0;
+      slideSound.play();
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script>
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({
+    canvas: document.getElementById("bg-canvas"),
+    alpha: true
+  });
+
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  camera.position.z = 5;
+
+  const geometry = new THREE.BufferGeometry();
+  const count = 1200;
+  const positions = new Float32Array(count * 3);
+
+  for (let i = 0; i < count * 3; i++) {
+    positions[i] = (Math.random() - 0.5) * 10;
+  }
+
+  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
+  const material = new THREE.PointsMaterial({
+    color: 0x22d3ee,
+    size: 0.02
+  });
+
+  const points = new THREE.Points(geometry, material);
+  scene.add(points);
+
+  function animate() {
+    requestAnimationFrame(animate);
+    points.rotation.y += 0.0006;
+    points.rotation.x += 0.0004;
+    renderer.render(scene, camera);
+  }
+
+  animate();
+
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth/window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".about-us", {
+    scrollTrigger: {
+      trigger: ".about-us",
+      start: "top 80%",
+    },
+    y: 80,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power3.out"
+  });
+
+  gsap.from(".footer-column", {
+    scrollTrigger: {
+      trigger: ".footer",
+      start: "top 85%",
+    },
+    y: 40,
+    opacity: 0,
+    stagger: 0.15,
+    duration: 1
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,966 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding-top: 90px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cart-count {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grid Layout */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+    animation: fadeUp 0.6s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Buttons - Updated to match Home Page */
+.buttons .btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+}
+
+.buttons .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.buttons .btn.active {
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
+}
+
+/* Make buttons equal width for consistency */
+.buttons .btn {
+    flex: 1;
+    text-align: center;
+}
+
+/* Optional: add spacing if stacked on mobile */
+@media (max-width: 576px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+/* ================= NAVBAR ================= */
+.navbar {
+  animation: slideInLeft 0.8s ease;
+  background-color: #fff;
+  padding: 12px 25px;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  transition: background-color 0.3s, padding 0.3s, box-shadow 0.3s;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: black !important;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  max-width: 480px;
+  /* border-radius: 8px;
+  border: 3px solid red;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.06);
+  /* box-shadow: 0 30px 60px red; */
+}
+
+/* Navbar underline animation */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: red !important;
+  transform: translateY(-2px);
+}
+
+/* Dropdown caret */
+.navbar .dropdown-toggle::after {
+  display: inline-block !important;
+}
+
+/* Search Form */
+.search-form input {
+  width: 220px;
+  border-radius: 8px;
+}
+
+.search-form button {
+  background: #b91c1c;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.search-form button:hover {
+  background: #111;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .search-form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
+.wrapper,
+.container,
+.main,
+section {
+  overflow: visible;
+}
+
+.navbar.scrolled {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+/* ================= DROPDOWN ================= */
+.dropdown-menu {
+  animation: fadeUp 0.35s ease forwards;
+  transform-origin: top;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.dropdown.show .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-item:hover {
+  background: #b91c1c;
+  color: #fff;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+/* ================= DARK MODE + BLUR + FADE ================= */
+
+.dark-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #b91c1c;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.05);
+}
+
+#toggleIcon {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+/* BLUR + FADE OVERLAY */
+body.dark-transition::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  pointer-events: none;
+  animation: fadeOverlay 0.35s ease;
+  z-index: 9998;
+}
+
+@keyframes fadeOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* SMOOTH COLOR TRANSITION */
+body,
+.navbar,
+.card,
+.footer,
+.dropdown-menu,
+input,
+textarea,
+button {
+  transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease;
+}
+
+/* DARK MODE COLORS */
+body.dark {
+  background: #0b1220 !important;
+  color: #e5e7eb !important;
+}
+
+body.dark .navbar {
+  background: #0a1020 !important;
+}
+
+body.dark .card,
+body.dark .footer,
+body.dark .dropdown-menu {
+  background: #0a1020 !important;
+  color: #fff !important;
+  border-color: #2f3a4a !important;
+}
+
+/* Button color in dark */
+body.dark .dark-toggle {
+  background: #111827;
+}
+
+/* ================= PAGE LOADER ================= */
+#pageLoader {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #333;
+  border-top-color: #b91c1c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+/* ===== DARK MODE NAVBAR TEXT FIX ===== */
+body.dark .navbar-nav .nav-link,
+body.dark .navbar-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* underline color in dark mode */
+body.dark .navbar-nav .nav-link::before {
+  background-color: #ffffff;
+}
+
+/* hover effect */
+body.dark .navbar-nav .nav-link:hover {
+  color: #f87171 !important; /* soft red hover */
+}
+/* ================= GENERAL ================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding-top: 90px; /* navbar fixed hai */
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 25px 0 15px;
+  color: #333;
+}
+
+.cart-count {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ================= GRID ================= */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px 40px;
+}
+
+/* ================= CARD ================= */
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+}
+
+/* ================= IMAGE FIX ================= */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;   /* 🔥 image cut nahi hogi */
+  background: #f9fafb;   /* white/gray background */
+  padding: 10px;
+}
+
+/* ================= CONTENT ================= */
+.product-card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* ================= BUTTONS ================= */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buttons .btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.buttons .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.buttons .btn.active {
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 576px) {
+  .cards-container {
+    padding: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+/* ================= DARK MODE FIX ================= */
+body.dark {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #0a1020;
+  color: #ffffff;
+}
+
+body.dark .card-content p {
+  color: #d1d5db;
+}
+
+body.dark .card img {
+  background: #020617;
+}
+/* ================= GRID ================= */
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 30px 50px;
+}
+
+/* ================= CARD ================= */
+.product-card {
+  position: relative;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    inset 0 0 0 1px rgba(255,255,255,0.6);
+  transition: all 0.45s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(185,28,28,0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.product-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* ================= IMAGE ================= */
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  padding: 15px;
+  background: radial-gradient(circle at top, #ffffff, #eaeaea);
+  transition: transform 0.45s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ================= CONTENT ================= */
+.product-card-content {
+  padding: 18px 18px 22px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card-content p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* ================= BUTTONS ================= */
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.buttons .btn {
+  flex: 1;
+  padding: 11px 0;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+  box-shadow: 0 8px 20px rgba(185,28,28,0.35);
+  transition: all 0.35s ease;
+}
+
+.buttons .btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 14px 30px rgba(185,28,28,0.45);
+}
+
+.buttons .btn.active {
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+  box-shadow: 0 10px 25px rgba(255,69,0,0.5);
+}
+
+/* ================= BADGE EFFECT (OPTIONAL) ================= */
+.product-card::after {
+  content: "HOT";
+  position: absolute;
+  top: 14px;
+  right: -40px;
+  background: #b91c1c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 50px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ================= DARK MODE ================= */
+body.dark .product-card {
+  background: linear-gradient(145deg, #0a1020, #020617);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+body.dark .product-card-content p {
+  color: #d1d5db;
+}
+
+body.dark .product-card img {
+  background: radial-gradient(circle at top, #020617, #000);
+}
+/* ================= GRID FIX ================= */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px 40px;
+  align-items: stretch;
+}
+
+/* 🔥 HEADING FIX – FULL WIDTH */
+.cards-container h2 {
+  grid-column: 1 / -1;   /* ⬅️ THIS IS THE MAIN FIX */
+  text-align: center;
+  margin: 40px 0 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* ================= CARD FIX ================= */
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.25);
+}
+.product-card.show {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.35s ease;
+}
+
+.product-card.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: 0.35s ease;
+}
+
+/* ================= IMAGE FIX ================= */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;   /* image cut nahi hogi */
+  background: #f5f5f5;
+  padding: 12px;
+}
+
+/* ================= CONTENT FIX ================= */
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* ================= BUTTON FIX ================= */
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.buttons .btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 999px;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons .btn:hover {
+  transform: scale(1.05);
+}
+
+.buttons .btn.active {
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+  .cards-container {
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+/* ================= DARK MODE ================= */
+body.dark .card {
+  background: #0a1020;
+}
+
+body.dark .card-content p {
+  color: #d1d5db;
+}
+
+body.dark .cards-container h2 {
+  color: #ffffff;
+}
+/* ================= DARK MODE (Cyber Look) ================= */
+body.dark {
+  background: #070a12;
+  color: #e5e7eb;
+}
+
+body.dark .navbar {
+  background: rgba(10,16,32,0.85) !important;
+  border-bottom: 1px solid rgba(34,211,238,0.25);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+body.dark .navbar-brand img {
+  border-color: #22d3ee !important;
+  box-shadow: 0 0 25px rgba(34,211,238,0.55);
+}
+
+body.dark .navbar-nav .nav-link,
+body.dark .navbar-nav .nav-link.active {
+  color: rgba(229,231,235,0.9) !important;
+}
+
+body.dark .navbar-nav .nav-link:hover {
+  color: #22d3ee !important;
+}
+
+body.dark .navbar-nav .nav-link::before {
+  background-color: #22d3ee !important;
+}
+
+body.dark .dropdown-menu {
+  background: rgba(10,16,32,0.92) !important;
+  border: 1px solid rgba(34,211,238,0.25);
+  backdrop-filter: blur(10px);
+}
+
+body.dark .dropdown-item {
+  color: #fff !important;
+}
+
+body.dark .dropdown-item:hover {
+  background: rgba(34,211,238,0.15) !important;
+}
+
+body.dark .product-card,
+body.dark .category-card,
+body.dark .video-card,
+body.dark .deals,
+body.dark .Catagory {
+  background: rgba(255,255,255,0.06) !important;
+  border-color: rgba(34,211,238,0.22) !important;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6) !important;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark a {
+  color: #e5e7eb !important;
+}
+
+body.dark .video-card {
+  background: rgba(255,255,255,0.05) !important;
+  border-color: rgba(34,211,238,0.25) !important;
+}
+
+body.dark .video-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(34,211,238,0.25) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.dark .video-card:hover::after {
+  opacity: 1;
+}
+
+body.dark .play-icon {
+  color: #fff;
+}
+
+body.dark .video-wrapper iframe,
+body.dark .video-card iframe {
+  box-shadow: 0 25px 60px rgba(0,0,0,0.8) !important;
+}
+
+body.dark .video-modal {
+  background: rgba(0,0,0,0.85);
+}
+
+body.dark .video-modal iframe {
+  border-radius: 18px;
+  box-shadow: 0 25px 80px rgba(0,0,0,0.8);
+}
+
+body.dark .footer {
+  background: #070a12 !important;
+  border-top: 1px solid rgba(34,211,238,0.25);
+}
+
+body.dark .footer a,
+body.dark .footer p {
+  color: rgba(229,231,235,0.8) !important;
+}
+
+body.dark .footer h3::after {
+  background: #22d3ee !important;
+}
+
+body.dark .btn,
+body.dark button {
+  background: linear-gradient(135deg, #22d3ee, #b91c1c) !important;
+  box-shadow: 0 20px 50px rgba(34,211,238,0.25) !important;
+}
+
+body.dark button:hover,
+body.dark .btn:hover {
+  background: linear-gradient(135deg, #f97316, #22d3ee) !important;
+  box-shadow: 0 25px 60px rgba(34,211,238,0.35) !important;
+}
+
+body.dark .cart-fly {
+  background: #22d3ee !important;
+}
+body.dark #toggleIcon {
+  color: #22d3ee;
+  text-shadow: 0 0 12px rgba(34,211,238,0.6);
+}
+body.dark .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
+              radial-gradient(circle at center, rgba(34,211,238,0.18), transparent 60%);
+}
+.filter-buttons .btn {
+  margin: 6px;
+  border-radius: 999px;
+}
+
+.filter-buttons .btn.active {
+  background: linear-gradient(135deg, #ff4500, #ff7f50);
+}
+/* FILTER ANIMATIONS */
+.product-card {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.product-card.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.product-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+.product-card.show {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.35s ease;
+}
+
+
+
+.product-card.hide {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.product-card.show {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.35s ease;
+}
+
+.product-card.hide {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+.buttons {
+  position: relative;
+  z-index: 10;
+}
+
+.product-card::before,
+.product-card::after {
+  pointer-events: none;
+}

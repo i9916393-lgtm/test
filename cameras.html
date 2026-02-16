@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Store</title>
+    <link rel="stylesheet" href="cameras.css">
+<link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+  <nav class="navbar  navbar-expand-lg navbar-light">
+
+    <div class="container-fluid">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" id="logo" href="#">
+        <img  src="images\final logo.png" alt="FotoLab">
+      </a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+
+          <!-- Cameras Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="cameras.html" role="button" data-bs-toggle="dropdown">
+              Cameras
+            </a>
+            <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="cameras.html">DSLR Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Mirrorless Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+               <li><a class="dropdown-item" href="cameras.html">Bridge Cameras</a></li>
+                <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+                 <li><a class="dropdown-item" href="cameras.html">ProfessionalCameras</a></li>
+                  <li><a class="dropdown-item" href="cameras.html">Rugged Cameras</a></li>
+            </ul>
+          </li>
+
+          <!-- Accessories Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Accessories.html" role="button" data-bs-toggle="dropdown">
+            Accessories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Accessories.html">Tripods & Supports</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Camera Bags & Cases</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Lighting & Studio</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Filter & Lens Accessories</a></li>
+             <li><a class="dropdown-item" href="Accessories.html">Cleaning & Maintenance</a></li>
+              <li><a class="dropdown-item" href="Accessories.html">Batteries & Chargers</a></li>
+               <li><a class="dropdown-item" href="Accessories.html">Cables & Adapters</a></li>
+                <li><a class="dropdown-item" href="Accessories.html">Miscellaneous Accessories</a></li>
+          </ul>
+        </li>
+          <!-- Lenses Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lences.html" role="button" data-bs-toggle="dropdown">
+              Lenses
+            </a>
+            <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="lences.html">Prime Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Zoom Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Wide Angle Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Telephoto Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Macro Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Portrait Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Standard Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Cine / Video Lenses</a></li>
+            </ul>
+          </li>
+   <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="drone cameras.html" role="button" data-bs-toggle="dropdown">
+            Drone Cameras
+            </a>
+            <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="drone cameras.html">Camera Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Professional / Cinema Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Beginner Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Mini / Compact Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">FPV Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Long Range Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Industrial / Commercial Drones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+         
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Cart Icon -->
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#">
+              <i class="bi bi-cart fs-5"></i>
+              <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                0
+              </span>
+            </a>
+          </li>
+
+        </ul>
+        <form class="d-flex" id="searchForm">
+          <input id="siteSearch" class="form-control me-2" type="search" placeholder="Search products & videos"
+            aria-label="Search">
+
+          <button id="searchBtn" type="button" class="btn btn-dark">
+            <i class="bi bi-search"></i>
+          </button>
+
+
+
+        </form>
+
+
+      </div>
+
+
+  </nav>
+
+    <h1> Our Cameras</h1>
+    <div class="cart-count">🛒 Cart Items: <span id="count">0</span></div>
+
+<div class="filter-buttons text-center mb-4">
+  <button class="btn filter-btn active" data-filter="all">All</button>
+  <button class="btn filter-btn" data-filter="canon">Canon</button>
+  <button class="btn filter-btn" data-filter="nikon">Nikon</button>
+  <button class="btn filter-btn" data-filter="panasonic">Panasonic</button>
+   <button class="btn filter-btn" data-filter="olympus">Olympus</button>
+    <button class="btn filter-btn" data-filter="leica">leica</button>
+     <button class="btn filter-btn" data-filter="pentax">Pentax</button>
+      <button class="btn filter-btn" data-filter="fujifilm">Fujifilm</button>
+       <button class="btn filter-btn" data-filter="sony">Sony</button>
+</div>
+    <!-- Cards Container -->
+    <div class="cards-container">
+    <h2 class="brand-title" data-brand="canon">Canon Cameras</h2>
+
+        <!-- Loop of 30 cards -->
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-90d.jpg" alt="Camera 1">
+            <div class="card-content">
+                <p> Canon EOS 90D
+                    Type: DSLR
+                    Resolution: 32.5 MP
+                    Price: ₨280,000– ₨320,000
+                    Highlight: High-resolution DSLR for serious photography and video lovers</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-r10.jpg" alt="Camera 2">
+            <div class="card-content">
+                <p> Canon EOS R10
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨230,000– ₨260,000
+                    Highlight: Fast and lightweight mirrorless ideal for everyday creators</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-r6-mark-ii.jpg" alt="Camera 3">
+            <div class="card-content">
+                <p> Canon EOS R6MarkII
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨620,000– ₨700,000
+                    Highlight: Professional full-frame performance with excellent low-light quality</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-5d-mark-iv.jpg" alt="Camera 4">
+            <div class="card-content">
+                <p>Canon EOS 5DMark IV
+                    Type: DSLR
+                    Resolution: 30.4 MP
+                    Price: ₨550,000– ₨600,000
+                    Highlight: Legendary professional DSLR trusted worldwide</p>
+             <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-200d-ii.jpg" alt="Camera 5">
+            <div class="card-content">
+                <p> Canon EOS 200DII
+                    Type: DSLR
+                    Resolution: 24.1 MP
+                    Price: ₨180,000– ₨210,000
+                    Highlight: Compact and beginner-friendly DSLR</p>
+             <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-m50-mark-ii.jpg" alt="Camera 6">
+            <div class="card-content">
+                <p>Canon EOS M50MarkII
+                    Type: Mirrorless
+                    Resolution: 24.1 MP
+                    Price: ₨200,000– ₨230,000
+                    Highlight: Popular choice for vloggers and content creators</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-rp.jpg" alt="Camera 7">
+            <div class="card-content">
+                <p> Canon EOS RP
+                    Type: Mirrorless
+                    Resolution: 26.2 MP
+                    Price: ₨350,000– ₨390,000
+                    Highlight: Affordable entry into full-frame mirrorless cameras</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="canon">
+            <img src="images\foto lab camera images\canon-eos-rebel-t8i.jpg" alt="Camera 8">
+            <div class="card-content">
+                <p>Canon EOS Rebel T8i
+                    Type: DSLR
+                    Resolution: 24.1 MP
+                    Price: ₨250,000– ₨280,000
+                    Highlight: Versatile DSLR designed for learning and growth
+                </p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <h2>Nikon Cameras</h2>
+        <div class="product-card" data-category="nikon">
+            <img src="images\foto lab camera images\nikon images\nikon-d3500-jpg.webp" alt="Camera 9">
+            <div class="card-content">
+                <p>Nikon D3500
+                    Type: DSLR
+                    Resolution: 24.2 MP
+                    Price: ₨140,000– ₨165,000
+                    Highlight: Perfect beginner DSLR with long battery life</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/nikon changed cameras/Nikon D5600.jpg "alt="Camera 10">
+            <div class="card-content">
+                <p> Nikon D5600
+                    Type: DSLR
+                    Resolution: 24.2 MP
+                    Price: ₨190,000– ₨220,000
+                    Highlight: Easy-to-use DSLR with flip touchscreen</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/nikon changed cameras/Nikon D7500.jpg" alt="Camera 11">
+            <div class="card-content">
+                <p> Nikon D7500
+                    Type: DSLR
+                    Resolution: 20.9 MP
+                    Price: ₨280,000– ₨320,000
+                    Highlight: Powerful DSLR for wildlife and sports photography</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="nikon">
+            <img src="images\foto lab camera images\nikon images\nikon-d850-jpg.webp" alt="Camera 12">
+            <div class="card-content">
+                <p>Nikon D850
+                    Type: DSLR
+                    Resolution: 45.7 MP
+                    Price: ₨700,000– ₨780,000
+                    Highlight: Ultra-high resolution professional photography camera</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="nikon">
+            <img src="images\foto lab camera images\nikon images\nikon-z-50-jpg.webp" alt="Camera 13">
+            <div class="card-content">
+                <p>Nikon Z50
+                    Type: Mirrorless
+                    Resolution: 20.9 MP
+                    Price: ₨230,000– ₨260,000
+                    Highlight: Compact mirrorless for travel and daily use</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/nikon changed cameras/Nikon Z6 II.jpg" alt="Camera 14">
+            <div class="card-content">
+                <p>Nikon Z6 II
+                    Type: Mirrorless
+                    Resolution: 24.5 MP
+                    Price: ₨550,000– ₨600,000
+                    Highlight: Full-frame mirrorless with strong photo-video balance</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="nikon">
+            <img src="images\foto lab camera images\nikon images\nikon-z7II-jpg.webp" alt="Camera 15">
+            <div class="card-content">
+                <p>Nikon Z7 II
+                    Type: Mirrorless
+                    Resolution: 45.7 MP
+                    Price: ₨750,000– ₨820,000
+                    Highlight: High-resolution mirrorless for studio professionals</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="nikon">
+            <img src="images\foto lab camera images\nikon images\nikon-z30_jpg.webp" alt="Camera 16">
+            <div class="card-content">
+                <p>Nikon Z30
+                    Type: Mirrorless
+                    Resolution: 20.9 MP
+                    Price: ₨210,000– ₨240,000
+                    Highlight: Designed specially for vloggers and creators</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+<h2>Panasonic Cameras</h2>
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/panasonic changed cameras/Panasonic Lumix G7.jpg" alt="Camera 17">
+            <div class="card-content">
+                <p>Panasonic Lumix G7
+                    Type: Mirrorless
+                    Resolution: 16 MP
+                    Price: ₨160,000– ₨190,000
+                    Highlight: Affordable mirrorless with strong video features</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="panasonic">
+            <img src="images\foto lab camera images\panasonic cameras\Panasonic Lumix G85.jpg" alt="Camera 18">
+            <div class="card-content">
+                <p>Panasonic Lumix G85
+                    Type: Mirrorless
+                    Resolution: 16 MP
+                    Price: ₨220,000– ₨250,000
+                    Highlight: Rugged camera for outdoor shooting</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="panasonic">
+            <img src="images\foto lab camera images\panasonic cameras\Panasonic Lumix GH5.jpg" alt="Camera 19">
+            <div class="card-content">
+                <p>Panasonic Lumix GH5
+                    Type: Mirrorless
+                    Resolution: 20.3 MP
+                    Price: ₨400,000– ₨450,000
+                    Highlight: Industry-famous camera for professional video</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="panasonic">
+            <img src="images\foto lab camera images\panasonic cameras\Panasonic Lumix GH6.jpg" alt="Camera 20">
+            <div class="card-content">
+                <p>Panasonic Lumix GH6
+                    Type: Mirrorless
+                    Resolution: 25.2 MP
+                    Price: ₨600,000– ₨680,000
+                    Highlight: Advanced cinema-grade mirrorless camera</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/panasonic changed cameras/Panasonic Lumix S5.jpg" alt="Camera 21">
+            <div class="card-content">
+                <p>Panasonic Lumix S5
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨380,000– ₨420,000
+                    Highlight: Full-frame camera for hybrid creators</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/panasonic changed cameras/Panasonic Lumix S1.jpg" alt="Camera 22">
+            <div class="card-content">
+                <p>Panasonic Lumix S1
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨650,000– ₨720,000
+                    Highlight: Professional full-frame build for serious creators</p>
+            <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="panasonic">
+            <img src="images/foto lab camera images/panasonic cameras/Panasonic Lumix LX100 II.jpg" alt="Camera 23">
+            <div class="card-content">
+                <p>Panasonic Lumix LX100 II
+                    Type: Compact
+                    Resolution: 17 MP
+                    Price: ₨300,000– ₨340,000
+                    Highlight: Premium compact camera with large sensor</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="panasonic">
+            <img src="images/foto lab camera images/panasonic cameras/Panasonic Lumix FZ300.jpg" alt="Camera 24">
+            <div class="card-content">
+                <p>Panasonic Lumix FZ300
+                    Type: Bridge Camera
+                    Resolution: 12 MP
+                    Price: ₨200,000– ₨230,000
+                    Highlight: All-in-one camera with powerful zoom</p>
+            <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <h2> Olympus Cameras</h2>
+        <div class="product-card" data-category="olympus">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/Olympus OM-D E-M10 Mark IV.jpg"
+                alt="Camera 25">
+            <div class="card-content">
+                <p> Olympus OM-DE-M10 Mark IV
+                    Type: Mirrorless
+                    Resolution: 20 MP
+                    Price: ₨150,000– ₨180,000
+                    Highlight: Everyday all-round camera with compact design</p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/all changed cameras/all changed cameras/olympus changed camera/Olympus OM-D E-M5 Mark III.jpg" alt="Camera 26">
+            <div class="card-content">
+                <p>Olympus OM-DE-M5Mark III
+                    Type: Mirrorless
+                    Resolution: 20 MP
+                    Price: ₨280,000– ₨320,000
+                    Highlight: Weather-sealed travel photography camera</p>
+          <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/images (4).jpg" alt="Camera 27">
+            <div class="card-content">
+                <p> Olympus OM-DE-M1Mark III
+                    Type: Mirrorless
+                    Resolution: 20 MP
+                    Price: ₨450,000– ₨500,000
+                    Highlight: Professional mirrorless for outdoor shooting</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="olympus">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/Olympus PEN E-PL10.jpg"
+                alt="Camera 28">
+            <div class="card-content">
+                <p> Olympus PENE-PL10
+                    Type: Mirrorless
+                    Resolution: 16 MP
+                    Price: ₨140,000– ₨170,000
+                    Highlight: Stylish camera for everyday photography</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="olympus">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/Olympus Tough TG-6.jpg"
+                alt="Camera 29">
+            <div class="card-content">
+                <p> Olympus Tough TG-6
+                    Type: Rugged Compact
+                    Resolution: 12 MP
+                    Price: ₨180,000– ₨210,000
+                    Highlight: Waterproof and shockproof adventure camera</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="olympus">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/Olympus OM-D E-M1X.jpg"
+                alt="Camera 30">
+            <div class="card-content">
+                <p> Olympus OM-DE-M1X
+                    Type: Mirrorless
+                    Resolution: 20 MP
+                    Price: ₨650,000– ₨720,000
+                    Highlight: Flagship wildlife photography camera</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+
+        <div class="product-card" data-category="olympus">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/Olympus PEN-F.jpg"
+                alt="Camera 31">
+            <div class="card-content">
+                <p> Olympus PEN-F
+                    Type: Mirrorless
+                    Resolution: 20 MP
+                    Price: ₨350,000– ₨400,000
+                    Highlight: Retro-style camera with artistic color control</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="olympus">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/Olympus Stylus 1s.jpg"
+                alt="Camera 32">
+            <div class="card-content">
+                <p> Olympus Stylus 1s
+                    Type: Compact
+                    Resolution: 12 MP
+                    Price: ₨120,000– ₨150,000
+                    Highlight: Portable camera with powerful zoom
+                </p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <h2> Leica Cameras</h2>
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica Q2.jpg"
+                alt="Camera 33">
+            <div class="card-content">
+                <p> Leica Q2
+                    Type: Compact Full-Frame
+                    Resolution: 47.3 MP
+                    Price: ₨1,200,000– ₨1,300,000
+                    Highlight: Luxury compact camera with stunning image quality</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica SL2.jpg"
+                alt="Camera 34">
+            <div class="card-content">
+                <p>Leica SL2
+                    Type: Mirrorless
+                    Resolution: 47.3 MP
+                    Price: ₨1,400,000– ₨1,500,000
+                    Highlight: Professional full-frame camera with premium build</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+<div class="product-card" data-category="leica">
+    <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica SL2-S.jpg"
+         alt="Camera 35">
+
+    <div class="card-content">
+        <p>
+            Leica SL2-S<br>
+            Type: Mirrorless<br>
+            Resolution: 24.6 MP<br>
+            Price: ₨1,300,000– ₨1,400,000<br>
+            Highlight: Leica’s video-focused professional camera
+        </p>
+
+        <div class="buttons">
+            <a href="details.docx" download class="btn buy">Details</a>
+            <button type="button" class="btn cart" onclick="addToCart(this)">Add to Cart</button>
+            <button type="button" class="btn buy-now" onclick="buyNow(this)">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica M10-R.jpg"
+                alt="Camera 36">
+            <div class="card-content">
+                <p> Leica M10-R
+                    Type: Rangefinder
+                    Resolution: 40 MP
+                    Price: ₨1,500,000– ₨1,600,000
+                    Highlight: Iconic rangefinder for classic photography lovers</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica M11.jpg"
+                alt="Camera 37">
+            <div class="card-content">
+                <p> Leica M11
+                    Type: Rangefinder
+                    Resolution: 60 MP
+                    Price: ₨1,700,000– ₨1,900,000
+                    Highlight: Ultimate resolution in a classic Leica body</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica D-Lux 7.jpg"
+                alt="Camera 38">
+            <div class="card-content">
+                <p> Leica D-Lux 7
+                    Type: Compact
+                    Resolution: 17 MP
+                    Price: ₨350,000– ₨400,000
+                    Highlight: Premium compact camera with Leica color science</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica CL.jpg"
+                alt="Camera 39">
+            <div class="card-content">
+                <p> Leica CL
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨600,000– ₨650,000
+                    Highlight: Compact Leica mirrorless for everyday shooting</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leica">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/Leica TL2.jpg"
+                alt="Camera 40">
+            <div class="card-content">
+                <p> Leica TL2
+                    Type: Mirrorless
+                    Resolution: 24 MP
+                    Price: ₨550,000– ₨600,000
+                    Highlight: Minimalist design with premium Leica performance
+                </p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <h2>Pentax Cameras</h2>
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax K-70.jpg"
+                alt="Camera 41">
+            <div class="card-content">
+                <p> Pentax K-70
+                    Type: DSLR
+                    Resolution: 24.2 MP
+                    Price: ₨170,000– ₨200,000
+                    Highlight: Weather-sealed DSLR ideal for outdoor photography</p>
+           <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax KP.jpg"
+                alt="Camera 42">
+            <div class="card-content">
+                <p> Pentax KP
+                    Type: DSLR
+                    Resolution: 24.3 MP
+                    Price: ₨250,000– ₨290,000
+                    Highlight: Compact DSLR with excellent low-light performance</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax K-3 Mark III.jpg"
+                alt="Camera 43">
+            <div class="card-content">
+                <p> Pentax K-3 Mark III
+                    Type: DSLR
+                    Resolution: 25.7 MP
+                    Price: ₨420,000– ₨480,000
+                    Highlight: High-performance DSLR for professional use</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax K-1 Mark II.jpg"
+                alt="Camera 44">
+            <div class="card-content">
+                <p>Pentax K-1 Mark II
+                    Type: DSLR
+                    Resolution: 36.4 MP
+                    Price: ₨550,000– ₨600,000
+                    Highlight: Full-frame DSLR with rugged body design</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax K-50.jpg"
+                alt="Camera 45">
+            <div class="card-content">
+                <p>. Pentax K-50
+                    Type: DSLR
+                    Resolution: 16.3 MP
+                    Price: ₨120,000– ₨150,000
+                    Highlight: Affordable DSLR built for harsh environments</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax Q-S1.jpg"
+                alt="Camera 46">
+            <div class="card-content">
+                <p>Pentax Q-S1
+                    Type: Mirrorless
+                    Resolution: 12 MP
+                    Price: ₨130,000– ₨160,000
+                    Highlight: Ultra-compact interchangeable-lens camera</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax MX-1.jpg"
+                alt="Camera 47">
+            <div class="card-content">
+                <p> Pentax MX-1
+                    Type: Compact
+                    Resolution: 12 MP
+                    Price: ₨140,000– ₨170,000
+                    Highlight: Retro-style compact camera with premium feel</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pentax">
+            <img src="images/foto lab camera images/panasonic cameras/olympus cameras/leica cameras/pentax cameras/Pentax WG-6.jpg"
+                alt="Camera 48">
+            <div class="card-content">
+                <p>Pentax WG-6
+                    Type: Rugged Compact
+                    Resolution: 20 MP
+                    Price: ₨180,000– ₨210,000
+                    Highlight: Waterproof camera built for adventure lovers</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <h2>Fujifilm Cameras</h2>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/fujifilm-x-t30-II.jpg"
+                alt="Camera 49">
+            <div class="card-content">
+                <p> Fujifilm X-T30 II
+                    Type: Mirrorless
+                    Resolution: 26.1 MP
+                    Price: ₨270,000– ₨300,000
+                    Highlight: Stylish mirrorless with amazing color science</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdfpdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/fujifilm_x_t4.jpg" alt="Camera 50">
+            <div class="card-content">
+                <p> Fujifilm X-T4
+                    Type: Mirrorless
+                    Resolution: 26.1 MP
+                    Price: ₨450,000– ₨500,000
+                    Highlight: Professional hybrid camera for photo and video</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/Fujifilm X-S10.jpg" alt="Camera 51">
+            <div class="card-content">
+                <p>Fujifilm X-S10
+                    Type: Mirrorless
+                    Resolution: 26.1 MP
+                    Price: ₨300,000– ₨330,000
+                    Highlight: Compact camera with in-body stabilization</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/fujifilm-X-Pro3.jpg" alt="Camera 52">
+            <div class="card-content">
+                <p> Fujifilm X-Pro3
+                    Type: Mirrorless
+                    Resolution: 26.1 MP
+                    Price: ₨500,000– ₨550,000
+                    Highlight: Premium camera designed for street photography</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/Fujifilm GFX 50S II.jpg"
+                alt="Camera 53">
+            <div class="card-content">
+                <p> Fujifilm GFX 50S II
+                    Type: Medium Format
+                    Resolution: 51.4 MP
+                    Price: ₨900,000– ₨1,000,000
+                    Highlight: Medium-format camera for ultra-detailed images</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/Fujifilm X100V.jpg" alt="Camera 54">
+            <div class="card-content">
+                <p> Fujifilm X100V
+                    Type: Compact
+                    Resolution: 26.1 MP
+                    Price: ₨420,000– ₨460,000
+                    Highlight: Iconic compact camera loved by travel photographers</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/Fujifilm X-E4.jpg" alt="Camera 55">
+            <div class="card-content">
+                <p> Fujifilm X-E4
+                    Type: Mirrorless
+                    Resolution: 26.1 MP
+                    Price: ₨250,000– ₨280,000
+                    Highlight: Minimalist design with professional image quality</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="fujifilm">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/Fujifilm Instax Mini Evo.jpg"
+                alt="Camera 56">
+            <div class="card-content">
+                <p> Fujifilm Instax Mini Evo
+                    Type: Instant Camera
+                    Resolution: Hybrid
+                    Price: ₨120,000– ₨140,000
+                    Highlight: Fun instant camera with digital control
+                </p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <h2>Sony Cameras</h2>
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony Alpha A6000.jpg"
+                alt="Camera 57">
+            <div class="card-content">
+                <p> Sony Alpha A6000
+                    Type: Mirrorless
+                    Resolution: 24.3 MP
+                    Price: ₨160,000– ₨190,000
+                    Highlight: Compact mirrorless with fast autofocus</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony-Alpha-A6400.jpg"
+                alt="Camera 58">
+            <div class="card-content">
+                <p>Sony Alpha A6400
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨280,000– ₨320,000
+                    Highlight: Excellent autofocus for photo and video creators</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony Alpha A6600.jpg"
+                alt="Camera 59">
+            <div class="card-content">
+                <p>Sony Alpha A6600
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨400,000– ₨450,000
+                    Highlight: High-performance APS-C camera with strong battery</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony Alpha A7 III.jpg"
+                alt="Camera 60">
+            <div class="card-content">
+                <p> Sony Alpha A7 III
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨550,000– ₨600,000
+                    Highlight: Full-frame mirrorless loved by professionals</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony Alpha A7 IV.jpg"
+                alt="Camera 61">
+            <div class="card-content">
+                <p> Sony Alpha A7 IV
+                    Type: Mirrorless
+                    Resolution: 33 MP
+                    Price: ₨700,000– ₨780,000
+                    Highlight: Next-generation hybrid photo-video camera</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony FX30.jpg"
+                alt="Camera 62">
+            <div class="card-content">
+                <p> Sony FX30
+                    Type: Cinema / Mirrorless
+                    Resolution: 26 MP
+                    Price: ₨600,000– ₨650,000
+                    Highlight: Professional cinema camera for filmmakers</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony ZV-E10.jpg"
+                alt="Camera 63">
+            <div class="card-content">
+                <p> Sony ZV-E10
+                    Type: Mirrorless
+                    Resolution: 24.2 MP
+                    Price: ₨240,000– ₨270,000
+                    Highlight: Made specially for vloggers and creators</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="sony">
+            <img src="images/foto lab camera images/nikon images/fujifilm cameras/sony cameras/Sony RX100 VII.jpg"
+                alt="Camera 64">
+            <div class="card-content">
+                <p>Sony RX100 VII
+                    Type: Compact
+                    Resolution: 20.1 MP
+                    Price: ₨350,000– ₨390,000
+                    Highlight: Premium compact camera with professional features</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        </div>
+           <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>FotoLab is your one-stop shop for cameras, lenses, and accessories. We provide high-quality products for
+            photography enthusiasts and professionals.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="Index.html">Home</a><br>
+          <a href="cameras.html">Products</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <a href="cameras.html">DSLR Cameras</a><br>
+          <a href="cameras.html">Mirrorless Cameras</a><br>
+          <a href="cameras.html">Action Cameras</a><br>
+          <a href="cameras.html">Accessories</a>
+        </div>
+
+        <!-- Social & Contact -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p style="margin-top:15px;" ><a href="mailto:info@fotolab.com">
+
+         Email: info@fotolab.com </a><br>Phone: +123 456 7890</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="footer-bottom">
+        &copy; 2026 FotoLab. All Rights Reserved.
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let cartCount = 0;
+
+    function addToCart(button) {
+      cartCount++;
+
+      // Update cart count text
+      const countEl = document.getElementById("count");
+      const cartCountEl = document.getElementById("cartCount");
+
+      if (countEl) countEl.textContent = cartCount;
+      if (cartCountEl) cartCountEl.textContent = cartCount;
+
+      // Button feedback
+      button.innerText = "Added ✔";
+      button.disabled = true;
+      button.style.background = "#16a34a";
+    }
+  </script>
+  <script>
+    function buyNow(button) {
+      const card = button.closest(".product-card");
+      if (!card) return;
+
+      const text = card.querySelector(".card-content p")?.innerText || "";
+
+      const product = {
+        description: text
+      };
+
+      localStorage.setItem("buyNowItem", JSON.stringify(product));
+      window.location.href = "checkout.html";
+    }
+  </script>
+
+
+
+  <script>
+    // Navbar scroll shadow
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Cart counter (works on every page)
+
+    const cartBadge = document.getElementById("cartCount");
+
+    document.querySelectorAll(".btn-primary").forEach(btn => {
+      btn.addEventListener("click", function () {
+        cartCount++;
+        cartBadge.textContent = cartCount;
+      });
+    });
+
+    // Dropdown hover on desktop
+    if (window.innerWidth > 992) {
+      document.querySelectorAll(".dropdown").forEach(drop => {
+        drop.addEventListener("mouseenter", function () {
+          this.classList.add("show");
+          this.querySelector(".dropdown-menu").classList.add("show");
+        });
+        drop.addEventListener("mouseleave", function () {
+          this.classList.remove("show");
+          this.querySelector(".dropdown-menu").classList.remove("show");
+        });
+      });
+    }
+  </script>
+  <script>
+    // Hover dropdown for desktop
+    document.querySelectorAll('.navbar .dropdown').forEach(function (dropdown) {
+      dropdown.addEventListener('mouseenter', function () {
+        if (window.innerWidth > 992) {
+          dropdown.classList.add('show');
+          dropdown.querySelector('.dropdown-menu').classList.add('show');
+        }
+      });
+
+      dropdown.addEventListener('mouseleave', function () {
+        if (window.innerWidth > 992) {
+          dropdown.classList.remove('show');
+          dropdown.querySelector('.dropdown-menu').classList.remove('show');
+        }
+      });
+    });
+  </script>
+  <button id="darkToggle" class="dark-toggle">
+    <span id="toggleIcon">🌙</span>
+  </button>
+
+
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    const icon = document.getElementById("toggleIcon");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.add("dark-transition");
+
+      setTimeout(() => {
+        document.body.classList.toggle("dark");
+
+        // Icon animation
+        if (document.body.classList.contains("dark")) {
+          icon.textContent = "🌞";
+          icon.style.transform = "rotate(360deg)";
+        } else {
+          icon.textContent = "🌙";
+          icon.style.transform = "rotate(-360deg)";
+        }
+
+        document.body.classList.remove("dark-transition");
+      }, 150);
+    });
+  </script>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Active button
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const category = card.dataset.category;
+
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.classList.remove('hide');
+              card.classList.add('show');
+            }, 10);
+          } else {
+            card.classList.remove('show');
+            card.classList.add('hide');
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+  </script>
+
+<script>
+
+
+  function addToCart(button) {
+    console.log("Add to Cart clicked");
+
+    cartCount++;
+
+    const navCount = document.getElementById("cartCount");
+    const pageCount = document.getElementById("count");
+
+    if (navCount) navCount.textContent = cartCount;
+    if (pageCount) pageCount.textContent = cartCount;
+
+    button.innerText = "Added ✔";
+    button.disabled = true;
+  }
+
+  function buyNow(button) {
+    console.log("Buy Now clicked");
+    alert("Buy Now works!");
+  }
+</script>
+
+</body>
+
+</html>

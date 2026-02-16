@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drone.css">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link rel="stylesheet" href="Index.css">
+
+</head>
+<body>
+  <nav class="navbar  navbar-expand-lg navbar-light">
+
+    <div class="container-fluid">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" id="logo" href="#">
+        <img  src="images\final logo.png" alt="FotoLab">
+      </a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+
+          <!-- Cameras Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="cameras.html" role="button" data-bs-toggle="dropdown">
+              Cameras
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cameras.html">DSLR Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Mirrorless Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+               <li><a class="dropdown-item" href="cameras.html">Bridge Cameras</a></li>
+                <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+                 <li><a class="dropdown-item" href="cameras.html">ProfessionalCameras</a></li>
+                  <li><a class="dropdown-item" href="cameras.html">Rugged Cameras</a></li>
+            </ul>
+          </li>
+
+          <!-- Accessories Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Accessories.html" role="button" data-bs-toggle="dropdown">
+            Accessories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Accessories.html">Tripods & Supports</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Camera Bags & Cases</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Lighting & Studio</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Filter & Lens Accessories</a></li>
+             <li><a class="dropdown-item" href="Accessories.html">Cleaning & Maintenance</a></li>
+              <li><a class="dropdown-item" href="Accessories.html">Batteries & Chargers</a></li>
+               <li><a class="dropdown-item" href="Accessories.html">Cables & Adapters</a></li>
+                <li><a class="dropdown-item" href="Accessories.html">Miscellaneous Accessories</a></li>
+          </ul>
+        </li>
+          <!-- Lenses Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lences.html" role="button" data-bs-toggle="dropdown">
+              Lenses
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="lences.html">Prime Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Zoom Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Wide Angle Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Telephoto Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Macro Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Portrait Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Standard Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Cine / Video Lenses</a></li>
+            </ul>
+          </li>
+   <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="drone cameras.html" role="button" data-bs-toggle="dropdown">
+            Drone Cameras
+            </a>
+            <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="drone cameras.html">Camera Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Professional / Cinema Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Beginner Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Mini / Compact Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">FPV Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Long Range Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Industrial / Commercial Drones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Cart Icon -->
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#">
+              <i class="bi bi-cart fs-5"></i>
+              <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                0
+              </span>
+            </a>
+          </li>
+
+        </ul>
+        <form class="d-flex" id="searchForm">
+          <input id="siteSearch" class="form-control me-2" type="search" placeholder="Search products & videos"
+            aria-label="Search">
+
+          <button id="searchBtn" type="button" class="btn btn-dark">
+            <i class="bi bi-search"></i>
+          </button>
+
+
+
+        </form>
+
+
+      </div>
+
+
+  </nav>
+
+   <h1>Drone Cameras</h1>
+<div class="cart-count">🛒 Cart Items: <span id="count">0</span></div>
+
+      <!-- Cards Container -->
+    <div class="cards-container">
+<h2>DJI Drone Cameras</h2>
+        <!-- Loop of 30 cards -->
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/DJI DRONE CAMERAS/DJI Air 2S.jpg" alt="Camera 1">
+            <div class="card-content">
+                <p>DJI Air 2S
+Type: Consumer Drone
+Camera: 1-inch 20MP
+Max Flight Time: 31 min
+Price: ₨180,000– ₨220,000
+Highlight: 5.4K video for cinematic aerial shots </p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+ </div>
+ </div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/DJI DRONE CAMERAS/DJI Mini 3.jpg" alt="Camera 2">
+            <div class="card-content">
+                <p> DJI Mini 3
+Type: Lightweight Drone
+Camera: 12MP
+Max Flight Time: 38 min
+Price: ₨150,000– ₨180,000
+Highlight: Ultra-light design with long flight time</p>
+      <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/DJI DRONE CAMERAS/DJI Inspire 2.jpg" alt="Camera 3">
+            <div class="card-content">
+                <p> DJI Inspire 2
+Type: Cinematic Drone
+Camera: Supports X5S/X7
+Max Flight Time: 27 min
+Price: ₨1,200,000– ₨1,500,000
+Highlight: Professional film production drone</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/DJI DRONE CAMERAS/DJI Mavic 3.jpg" alt="Camera 4">
+            <div class="card-content">
+                <p>DJI Mavic 3
+Type: Professional Drone
+Camera: 4/3 CMOS Hasselblad
+Max Flight Time: 46 min
+Price: ₨550,000– ₨650,000
+Highlight: 5.1K video & superior image quality</p>
+            <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/DJI DRONE CAMERAS/DJI Mini 2.jpg" alt="Camera 5">
+            <div class="card-content">
+                <p> DJI Mini 2
+Type: Entry-Level Drone
+Camera: 12MP
+Max Flight Time: 31 min
+Price: ₨120,000– ₨150,000
+Highlight: Beginner-friendly with 4K video
+</p>
+           <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div></div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/DJI DRONE CAMERAS/DJI FPV.jpg" alt="Camera 6">
+            <div class="card-content">
+                <p>DJI FPV
+Type: FPV Racing Drone
+Camera: 4K 60fps
+Max Flight Time: 20 min
+Price: ₨260,000– ₨320,000
+Highlight: Immersive racing experience with 4K recording</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+
+            </div>
+        </div>
+</div>
+<h2>Autel Drone Cameras</h2>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/autel robotics drone cameras/Autel EVO II.jpg" alt="Camera 8">
+            <div class="card-content">
+                <p>Autel EVO II
+Type: Professional Drone
+Camera: 8K / 48MP
+Max Flight Time: 40 min
+Price: ₨450,000– ₨550,000
+Highlight: Ultra-high resolution 8K video
+</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/autel robotics drone cameras/Autel EVO Lite+.jpg" alt="Camera 9">
+            <div class="card-content">
+                <p>Autel EVO Lite+
+Type: Hybrid Drone
+Camera: 50MP 1-inch sensor
+Max Flight Time: 40 min
+Price: ₨380,000– ₨450,000
+Highlight: Best low-light performance in its class</p>
+             <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/autel robotics drone cameras/Autel EVO Nano+.jpg"alt="Camera 10">
+            <div class="card-content">
+                <p> Autel EVO Nano+
+Type: Lightweight Drone
+Camera: 50MP
+Max Flight Time: 28 min
+Price: ₨170,000– ₨210,000
+Highlight: Compact & powerful camera for travel</p>
+           <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/autel robotics drone cameras/Autel EVO II Dual.jpg" alt="Camera 11">
+            <div class="card-content">
+                <p>Autel EVO II Dual
+Type: Thermal Drone
+Camera: 8K + Thermal
+Max Flight Time: 40 min
+Price: ₨800,000– ₨950,000
+Highlight: Thermal imaging for inspections </p>
+             <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+            </div>
+        </div>
+</div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/autel robotics drone cameras/Autel EVO II Pro.jpg" alt="Camera 12">
+            <div class="card-content">
+                <p>Autel EVO II Pro
+Type: Professional Drone
+Camera: 6K / 20MP
+Max Flight Time: 40 min
+Price: ₨500,000– ₨600,000
+Highlight: Pro-level video with large sensor
+</p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+           </div> </div>
+        </div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/autel robotics drone cameras/Autel EVO II V3.jpg" alt="Camera 13">
+            <div class="card-content">
+              <p>Autel EVO II V3
+Type: Advanced Drone
+Camera: 8K
+Max Flight Time: 45 min
+Price: ₨600,000– ₨700,000
+Highlight: High-end performance with long flight time</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+<h2>Parrot Drone cameras</h2>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/parrot drone cameras/Parrot Anafi.jpg" alt="Camera 14">
+            <div class="card-content">
+                <p>Parrot Anafi
+Type: Consumer Drone
+Camera: 21MP 4K HDR
+Max Flight Time: 25 min
+Price: ₨150,000– ₨180,000
+Highlight: Lightweight with 4K HDR video</p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/parrot drone cameras/Parrot Anafi USA.jpg" alt="Camera 15">
+            <div class="card-content">
+                <p>Parrot Anafi USA
+Type: Professional Drone
+Camera: Thermal + 32MP
+Max Flight Time: 32 min
+Price: ₨650,000– ₨750,000
+Highlight: Thermal imaging for professional use</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+            </div>
+        </div>
+</div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/parrot drone cameras/Parrot Bebop 2.jpg" alt="Camera 16">
+            <div class="card-content">
+                <p>Parrot Bebop 2
+Type: Entry-Level Drone
+Camera: 14MP
+Max Flight Time: 25 min
+Price: ₨90,000– ₨110,000
+Highlight: Beginner-friendly and portable</p>
+           <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+
+            </div>
+        </div>
+</div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/parrot drone cameras/Parrot Anafi FPV.jpg" alt="Camera 17">
+            <div class="card-content">
+                <p>Parrot Anafi FPV
+Type: FPV Drone
+Camera: 4K
+Max Flight Time: 25 min
+Price: ₨170,000– ₨200,000
+Highlight: FPV experience with 4K recording</p>
+             <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/parrot drone cameras/Parrot Disco.jpg" alt="Camera 18">
+            <div class="card-content">
+                <p>Parrot Disco
+Type: Fixed-wing Drone
+Camera: 14MP
+Max Flight Time: 45 min
+Price: ₨220,000– ₨260,000
+Highlight: Long flight time for wide coverag</p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/parrot drone cameras/Parrot ANAFI Thermal.jpg" alt="Camera 19">
+            <div class="card-content">
+                <p>Parrot ANAFI Thermal
+Type: Thermal Drone
+Camera: Thermal + 21MP
+Max Flight Time: 26 min
+Price: ₨450,000– ₨520,000
+Highlight: Thermal imaging for inspection
+</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+<h2>Skydio Drone cameras</h2>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/skydio drone cameras/Skydio 2+.jpg" alt="Camera 20">
+            <div class="card-content">
+              <p>Skydio 2+
+Type: Autonomous Drone
+Camera: 12MP 4K
+Max Flight Time: 27 min
+Price: ₨350,000– ₨420,000
+Highlight: Best obstacle avoidance & tracking</p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/skydio drone cameras/Skydio X2.jpg" alt="Camera 21">
+            <div class="card-content">
+                <p>Skydio X2
+Type: Enterprise Drone
+Camera: 4K + Thermal
+Max Flight Time: 35 min
+Price: ₨900,000– ₨1,050,000
+Highlight: Rugged drone for professional inspections</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/skydio drone cameras/Skydio 2.jpg" alt="Camera 22">
+            <div class="card-content">
+                <p>Skydio 2
+Type: Consumer Drone
+Camera: 12MP 4K
+Max Flight Time: 23 min
+Price: ₨300,000– ₨350,000
+Highlight: Autonomous flight with smart trackin</p>
+             <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/skydio drone cameras/Skydio X10.jpg" alt="Camera 23">
+            <div class="card-content">
+                <p>Skydio X10
+Type: Professional Drone
+Camera: 4K + advanced sensors
+Max Flight Time: 45 min
+Price: ₨1,200,000– ₨1,400,000
+Highlight: Long flight time & high-end performance</p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/skydio drone cameras/Skydio Autonomy Enterprise.jpg" alt="Camera 24">
+            <div class="card-content">
+                <p>Skydio Autonomy Enterprise
+Type: Enterprise Drone
+Camera: 4K + sensors
+Max Flight Time: 40 min
+Price: ₨1,000,000– ₨1,200,000
+Highlight: Fully autonomous flight syste</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="images/drone cameras/drone cameras/skydio drone cameras/Skydio 3.jpg" alt="Camera 25">
+            <div class="card-content">
+                <p>Skydio 3
+Type: Advanced Consumer Drone
+Camera: 4K 60fps
+Max Flight Time: 30 min
+Price: ₨450,000– ₨520,000
+Highlight: Smooth footage with smart tracking </p>
+              <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+          <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>FotoLab is your one-stop shop for cameras, lenses, and accessories. We provide high-quality products for
+            photography enthusiasts and professionals.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="Index.html">Home</a><br>
+          <a href="cameras.html">Products</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <a href="cameras.html">DSLR Cameras</a><br>
+          <a href="cameras.html">Mirrorless Cameras</a><br>
+          <a href="cameras.html">Action Cameras</a><br>
+          <a href="cameras.html">Accessories</a>
+        </div>
+
+        <!-- Social & Contact -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p style="margin-top:15px;" ><a href="mailto:info@fotolab.com">
+
+         Email: info@fotolab.com </a><br>Phone: +123 456 7890</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="footer-bottom">
+        &copy; 2026 FotoLab. All Rights Reserved.
+      </div>
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let cartCount = 0;
+
+    function addToCart(button) {
+      cartCount++;
+
+      // Update cart count text
+      const countEl = document.getElementById("count");
+      const cartCountEl = document.getElementById("cartCount");
+
+      if (countEl) countEl.textContent = cartCount;
+      if (cartCountEl) cartCountEl.textContent = cartCount;
+
+      // Button feedback
+      button.innerText = "Added ✔";
+      button.disabled = true;
+      button.style.background = "#16a34a";
+    }
+  </script>
+  <script>
+    function buyNow(button) {
+      const card = button.closest(".product-card");
+      if (!card) return;
+
+      const text = card.querySelector(".card-content p")?.innerText || "";
+
+      const product = {
+        description: text
+      };
+
+      localStorage.setItem("buyNowItem", JSON.stringify(product));
+      window.location.href = "checkout.html";
+    }
+  </script>
+
+
+
+  <script>
+    // Navbar scroll shadow
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Cart counter (works on every page)
+
+    const cartBadge = document.getElementById("cartCount");
+
+    document.querySelectorAll(".btn-primary").forEach(btn => {
+      btn.addEventListener("click", function () {
+        cartCount++;
+        cartBadge.textContent = cartCount;
+      });
+    });
+
+    // Dropdown hover on desktop
+    if (window.innerWidth > 992) {
+      document.querySelectorAll(".dropdown").forEach(drop => {
+        drop.addEventListener("mouseenter", function () {
+          this.classList.add("show");
+          this.querySelector(".dropdown-menu").classList.add("show");
+        });
+        drop.addEventListener("mouseleave", function () {
+          this.classList.remove("show");
+          this.querySelector(".dropdown-menu").classList.remove("show");
+        });
+      });
+    }
+  </script>
+  <script>
+    // Hover dropdown for desktop
+    document.querySelectorAll('.navbar .dropdown').forEach(function (dropdown) {
+      dropdown.addEventListener('mouseenter', function () {
+        if (window.innerWidth > 992) {
+          dropdown.classList.add('show');
+          dropdown.querySelector('.dropdown-menu').classList.add('show');
+        }
+      });
+
+      dropdown.addEventListener('mouseleave', function () {
+        if (window.innerWidth > 992) {
+          dropdown.classList.remove('show');
+          dropdown.querySelector('.dropdown-menu').classList.remove('show');
+        }
+      });
+    });
+  </script>
+  <button id="darkToggle" class="dark-toggle">
+    <span id="toggleIcon">🌙</span>
+  </button>
+
+
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    const icon = document.getElementById("toggleIcon");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.add("dark-transition");
+
+      setTimeout(() => {
+        document.body.classList.toggle("dark");
+
+        // Icon animation
+        if (document.body.classList.contains("dark")) {
+          icon.textContent = "🌞";
+          icon.style.transform = "rotate(360deg)";
+        } else {
+          icon.textContent = "🌙";
+          icon.style.transform = "rotate(-360deg)";
+        }
+
+        document.body.classList.remove("dark-transition");
+      }, 150);
+    });
+  </script>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Active button
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const category = card.dataset.category;
+
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.classList.remove('hide');
+              card.classList.add('show');
+            }, 10);
+          } else {
+            card.classList.remove('show');
+            card.classList.add('hide');
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+  </script>
+
+<script>
+
+
+  function addToCart(button) {
+    console.log("Add to Cart clicked");
+
+    cartCount++;
+
+    const navCount = document.getElementById("cartCount");
+    const pageCount = document.getElementById("count");
+
+    if (navCount) navCount.textContent = cartCount;
+    if (pageCount) pageCount.textContent = cartCount;
+
+    button.innerText = "Added ✔";
+    button.disabled = true;
+  }
+
+  function buyNow(button) {
+    console.log("Buy Now clicked");
+    alert("Buy Now works!");
+  }
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

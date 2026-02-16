@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Store</title>
+    <link rel="stylesheet" href="Accessories.css"> 
+  <link rel="stylesheet" href="about.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+  <nav class="navbar  navbar-expand-lg navbar-light">
+
+    <div class="container-fluid">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" id="logo" href="#">
+        <img  src="images\final logo.png" alt="FotoLab">
+      </a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- LINKS -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+
+          <!-- Cameras Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="cameras.html" role="button" data-bs-toggle="dropdown">
+              Cameras
+            </a>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="cameras.html">DSLR Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Mirrorless Cameras</a></li>
+              <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+               <li><a class="dropdown-item" href="cameras.html">Bridge Cameras</a></li>
+                <li><a class="dropdown-item" href="cameras.html">Campact Cameras</a></li>
+                 <li><a class="dropdown-item" href="cameras.html">ProfessionalCameras</a></li>
+                  <li><a class="dropdown-item" href="cameras.html">Rugged Cameras</a></li>
+            </ul>
+          </li>
+
+          <!-- Accessories Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Accessories.html" role="button" data-bs-toggle="dropdown">
+            Accessories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Accessories.html">Tripods & Supports</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Camera Bags & Cases</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Lighting & Studio</a></li>
+            <li><a class="dropdown-item" href="Accessories.html">Filter & Lens Accessories</a></li>
+             <li><a class="dropdown-item" href="Accessories.html">Cleaning & Maintenance</a></li>
+              <li><a class="dropdown-item" href="Accessories.html">Batteries & Chargers</a></li>
+               <li><a class="dropdown-item" href="Accessories.html">Cables & Adapters</a></li>
+                <li><a class="dropdown-item" href="Accessories.html">Miscellaneous Accessories</a></li>
+          </ul>
+        </li>
+          <!-- Lenses Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lences.html" role="button" data-bs-toggle="dropdown">
+              Lenses
+            </a>
+            <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="lences.html">Prime Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Zoom Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Wide Angle Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Telephoto Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Macro Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Portrait Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Standard Lenses</a></li>
+<li><a class="dropdown-item" href="lences.html">Cine / Video Lenses</a></li>
+            </ul>
+          </li>
+   <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="drone cameras.html" role="button" data-bs-toggle="dropdown">
+            Drone Cameras
+            </a>
+            <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="drone cameras.html">Camera Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Professional / Cinema Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Beginner Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Mini / Compact Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">FPV Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Long Range Drones</a></li>
+<li><a class="dropdown-item" href="drone cameras.html">Industrial / Commercial Drones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Cart Icon -->
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#">
+              <i class="bi bi-cart fs-5"></i>
+              <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                0
+              </span>
+            </a>
+          </li>
+
+        </ul>
+        <form class="d-flex" id="searchForm">
+          <input id="siteSearch" class="form-control me-2" type="search" placeholder="Search products & videos"
+            aria-label="Search">
+
+          <button id="searchBtn" type="button" class="btn btn-dark">
+            <i class="bi bi-search"></i>
+          </button>
+
+
+
+        </form>
+
+
+      </div>
+
+
+  </nav>
+
+   <h1> Our Accessories</h1>
+<div class="cart-count">🛒 Cart Items: <span id="count">0</span></div>
+<div class="filter-buttons text-center mb-4">
+  <button class="btn filter-btn active" data-filter="all">All</button>
+  <button class="btn filter-btn" data-filter="Tripods & Supports">Tripods & Supports</button>
+  <button class="btn filter-btn" data-filter="Camera Bags & Cases">Camera Bags & Cases</button>
+  <button class="btn filter-btn" data-filter="Lighting & Studio">Lighting & Studio</button>
+   <button class="btn filter-btn" data-filter="Filters & Lens Accessories">Filters & Lens Accessories</button>
+    <button class="btn filter-btn" data-filter="Cleaning & Maintenance">Cleaning & Maintenance</button>
+     <button class="btn filter-btn" data-filter="Batteries & Chargers">Batteries & Chargers</button>
+      <button class="btn filter-btn" data-filter="Cables & Adapters">Cables & Adapters</button>
+       <button class="btn filter-btn" data-filter="Miscellaneous Accessories">Miscellaneous Accessories</button>
+</div>
+
+    <!-- Cards Container -->
+    <div class="cards-container">
+<h2> Tripods & Supports</h2>
+        <!-- Loop of 30 cards -->
+        <div class="product-card"data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Manfrotto Befree.jpg" alt="Camera 1">
+            <div class="card-content">
+                <p> Manfrotto Befree
+Type: Travel Tripod
+Max Height: 150 cm
+Price: ₨25,000– ₨30,000
+Highlight: Lightweight & durable for travel photography</p>
+      <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+ </div>
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Joby GorillaPod 3K.jpg" alt="Camera 2">
+            <div class="card-content">
+                <p>  Joby GorillaPod 3K
+Type: Flexible Tripod
+Max Height: 30 cm
+Price: ₨8,000– ₨12,000
+Highlight: Flexible legs for unique angles & stability</p>
+  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Benro TMA38CL.jpg" alt="Camera 3">
+            <div class="card-content">
+                <p> Benro TMA38CL
+Type: Professional Tripod
+Max Height: 165 cm
+Price: ₨45,000– ₨55,000
+Highlight: Strong carbon fiber build for heavy lenses</p>
+  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Sirui T-025X.jpg" alt="Camera 4">
+            <div class="card-content">
+                <p>Sirui T-025X
+Type: Compact Tripod
+Max Height: 130 cm
+Price: ₨20,000– ₨25,000
+Highlight: Lightweight and travel-friendly</p>
+      <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Vanguard Alta Pro.jpg" alt="Camera 5">
+            <div class="card-content">
+                <p>  Vanguard Alta Pro
+Type: Studio Tripod
+Max Height: 180 cm
+Price: ₨35,000– ₨40,000
+Highlight: Smooth multi-angle adjustment</p>
+       <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+</div>
+</div>
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Neewer Carbon Tripod.jpg" alt="Camera 6">
+            <div class="card-content">
+                <p> Neewer Carbon Tripod
+Type: Carbon Tripod
+Max Height: 160 cm
+Price: ₨18,000– ₨22,000
+Highlight: Durable and lightweight carbon fiber</p>
+       <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/Zhiyun Crane 3S.jpg" alt="Camera 7">
+            <div class="card-content">
+                <p> Zhiyun Crane 3S
+Type: Gimbal Stabilizer
+Max Load: 6.5 kg
+Price: ₨120,000– ₨140,000
+Highlight: Professional video stabilization</p>
+      <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Tripods & Supports">
+            <img src="images/Accesories images/Accesories images/Tripods and Supports/DJI Ronin-S.jpg" alt="Camera 8">
+            <div class="card-content">
+                <p> DJI Ronin-S
+Type: Handheld Gimbal
+Max Load: 3.6 kg
+Price: ₨80,000– ₨95,000
+Highlight: Smooth cinematic shots for DSLR & mirrorless
+</p>
+      <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+<h2>Camera Bags & Cases</h2>
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/Lowepro ProTactic.jpg" alt="Camera 9">
+            <div class="card-content">
+                <p>Lowepro ProTactic
+Type: Camera Backpack
+Capacity: 2 cameras + lenses
+Price: ₨35,000– ₨40,000
+Highlight: Highly protective & organized storage</p>
+       <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/Peak Design Everyday.jpg" alt="Camera 10">
+            <div class="card-content">
+                <p>Peak Design Everyday
+Type: Sling Bag
+Capacity: 1 camera + lenses
+Price: ₨30,000– ₨35,000
+Highlight: Stylish & easy access for photographers </p>
+        <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src= "images/Accesories images/Accesories images/Camera Bags & Cases/Canon Camera Backpack.jpg" alt="Camera 11">
+            <div class="card-content">
+                <p> Canon Camera Backpack
+Type: Camera Bag
+Capacity: 1 camera + accessories
+Price: ₨18,000– ₨22,000
+Highlight: Durable and comfortable for daily use </p>
+      <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/Nikon Camera Backpack.jpg" alt="Camera 12">
+            <div class="card-content">
+                <p> Nikon Camera Backpack
+Type: Camera Bag
+Capacity: 1 camera + lenses
+Price: ₨18,000– ₨22,000
+Highlight: Secure storage with extra pockets</p>
+                   <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/Sony Camera Bag.jpg" alt="Camera 13">
+            <div class="card-content">
+              <p> Sony Camera Bag
+Type: Camera Sling
+Capacity: 1 camera + lens
+Price: ₨15,000– ₨18,000
+Highlight: Compact and lightweight design</p>
+                   <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/Think Tank StreetWalker.jpg" alt="Camera 14">
+            <div class="card-content">
+                <p> Think Tank StreetWalker
+Type: Professional Backpack
+Capacity: 2 cameras + lenses
+Price: ₨45,000– ₨50,000
+Highlight: Excellent build quality for professionals</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/Pelican Hard Case.jpg" alt="Camera 15">
+            <div class="card-content">
+                <p> Pelican Hard Case
+Type: Hard Case
+Capacity: Multiple cameras
+Price: ₨55,000– ₨65,000
+Highlight: Waterproof & impact resistant</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Camera Bags & Cases">
+            <img src="images/Accesories images/Accesories images/Camera Bags & Cases/AmazonBasics Camera Bag.jpg" alt="Camera 16">
+            <div class="card-content">
+                <p>AmazonBasics Camera Bag
+Type: Camera Bag
+Capacity: 1 camera + accessories
+Price: ₨8,000– ₨12,000
+Highlight: Budget-friendly and durable</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+<h2>Lighting & Studio</h2>
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Godox SL60W.jpg" alt="Camera 17">
+            <div class="card-content">
+                <p> Godox SL60W
+Type: LED Video Light
+Power: 60W
+Price: ₨25,000– ₨30,000
+Highlight: Bright and stable lighting for video</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Neewer 660 LED Panel.jpg" alt="Camera 18">
+            <div class="card-content">
+                <p> Neewer 660 LED Panel
+Type: LED Panel
+Power: 660 LEDs
+Price: ₨20,000– ₨25,000
+Highlight: Adjustable brightness & color temperature</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Ring Light 18 inch.jpg" alt="Camera 19">
+            <div class="card-content">
+                <p> Ring Light 18 inch
+Type: Ring Light
+Power: 18 inch
+Price: ₨12,000– ₨15,000
+Highlight: Perfect for portrait & vlogging</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Softbox Lighting Kit.jpg" alt="Camera 20">
+            <div class="card-content">
+              <p> Softbox Lighting Kit
+Type: Softbox
+Power: 2 lights
+Price: ₨18,000– ₨22,000
+Highlight: Soft and even lighting for studio</p>
+                   <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Yongnuo LED Light.jpg" alt="Camera 21">
+            <div class="card-content">
+                <p>Yongnuo LED Light
+Type: LED Light
+Power: 30W
+Price: ₨10,000– ₨13,000
+Highlight: Portable and easy to use</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Godox AD200.jpg" alt="Camera 22">
+            <div class="card-content">
+                <p> Godox AD200
+Type: Flash Strobe
+Power: 200Ws
+Price: ₨55,000– ₨65,000
+Highlight: Powerful flash for studio photography</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Profoto B10.jpg" alt="Camera 23">
+            <div class="card-content">
+                <p>Profoto B10
+Type: Studio Light
+Power: 250Ws
+Price: ₨150,000– ₨180,000
+Highlight: Professional-grade lighting with portable design</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Lighting & Studio">
+            <img src="images/Accesories images/Accesories images/Lighting & Studio/Reflector 5-in-1.jpg" alt="Camera 24">
+            <div class="card-content">
+                <p> Reflector 5-in-1
+Type: Light Reflector
+Size: 110 cm
+Price: ₨5,000– ₨8,000
+Highlight: Great for controlling natural light
+</p>
+                   <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+<h2>Filters & Lens Accessories</h2>
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Hoya UV Filter.jpg" alt="Camera 25">
+            <div class="card-content">
+                <p> Hoya UVFilter
+Type: UV Filter
+Size: 52mm / 58mm / 67mm
+Price: ₨3,000– ₨5,000
+Highlight: Protects lens & improves clarity</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/B+W Polarizer.jpg" alt="Camera 26">
+            <div class="card-content">
+                <p> B+WPolarizer
+Type: Polarizing Filter
+Size: 67mm / 77mm
+Price: ₨12,000– ₨15,000
+Highlight: Enhances colors & reduces glare</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Tiffen ND Filter.jpg" alt="Camera 27">
+            <div class="card-content">
+                <p> Tiffen ND Filter
+Type: ND Filter
+Strength: ND4 / ND8 / ND16
+Price: ₨5,000– ₨8,000
+Highlight: Perfect for long exposure & video</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Hoya ND Filter Kit.jpg" alt="Camera 28">
+            <div class="card-content">
+                <p> Hoya NDFilter Kit
+Type: ND Filter Kit
+Includes: ND8, ND16, ND32
+Price: ₨10,000– ₨12,000
+Highlight: Complete set for creative photography</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Lens Hood.jpg" alt="Camera 29">
+            <div class="card-content">
+                <p> Lens Hood
+Type: Lens Hood
+Size: Standard
+Price: ₨2,000– ₨3,000
+Highlight: Reduces lens flare & protects lens</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Lens Cap.jpg" alt="Camera 30">
+            <div class="card-content">
+                <p> Lens Cap
+Type: Lens Cap
+Size: Standard
+Price: ₨500– ₨1,000
+Highlight: Essential protection for lenses</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+       <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Filter Case.jpg" alt="Camera 31">
+            <div class="card-content">
+                <p> Filter Case
+Type: Filter Storage
+Capacity: 4 filters
+Price: ₨1,500– ₨2,500
+Highlight: Keeps filters safe & organized</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Filters & Lens Accessories">
+            <img src="images/Accesories images/Accesories images/Filters & Lens Accessories/Step-up Rings.jpg" alt="Camera 32">
+            <div class="card-content">
+                <p> Step-up Rings
+Type: Lens Adapter
+Sizes: 52mm to 77mm
+Price: ₨1,000– ₨2,000
+Highlight: Allows use of filters on multiple lenses
+</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+<h2>Cleaning & Maintenance</h2>
+     <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Lens Cleaning Kit.jpg" alt="Camera 33">
+            <div class="card-content">
+                <p> Lens Cleaning Kit
+Type: Cleaning Kit
+Includes: cloth + solution
+Price: ₨1,500– ₨2,500
+Highlight: Keeps lenses spotless and clear</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Sensor Cleaning Kit.jpg" alt="Camera 34">
+            <div class="card-content">
+                <p>Sensor Cleaning Kit
+Type: Sensor Cleaning
+Includes: swabs + solution
+Price: ₨3,000– ₨4,000
+Highlight: Safe cleaning for camera sensor</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Microfiber Cloth Pack.jpg" alt="Camera 35">
+            <div class="card-content">
+                <p> Microfiber Cloth Pack
+Type: Cleaning Cloth
+Pack: 5 pieces
+Price: ₨800– ₨1,200
+Highlight: Soft cloth for lens & screen cleaning</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Air Blower.jpg" alt="Camera 36">
+            <div class="card-content">
+                <p>Air Blower
+Type: Dust Blower
+Price: ₨600– ₨1,000
+Highlight: Removes dust without touching the lens</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Cleaning Solution.jpg" alt="Camera 37">
+            <div class="card-content">
+                <p>Cleaning Solution
+Type: Cleaning Liquid
+Price: ₨700– ₨1,000
+Highlight: Safe solution for lens cleaning</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Dust Remover.jpg" alt="Camera 38">
+            <div class="card-content">
+                <p>Dust Remover
+Type: Dust Removal Tool
+Price: ₨1,000– ₨1,500
+Highlight: Keeps camera clean and dust-free</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+       <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Lens Pen.jpg" alt="Camera 39">
+            <div class="card-content">
+                <p> Lens Pen
+Type: Cleaning Pen
+Price: ₨900– ₨1,200
+Highlight: Compact and easy to use</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cleaning & Maintenance">
+            <img src="images/Accesories images/Accesories images/Cleaning & Maintenance/Camera Rain Cover.jpg" alt="Camera 40">
+            <div class="card-content">
+                <p> Camera Rain Cover
+Type: Rain Cover
+Size: Universal
+Price: ₨2,000– ₨3,000
+Highlight: Protects camera in rainy weather
+</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+   
+<h2> Batteries & Chargers</h2>
+     <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Canon LP-E6N Battery.jpg" alt="Camera 41">
+            <div class="card-content">
+                <p> Canon LP-E6N Battery
+Type: Camera Battery
+Capacity: 1865mAh
+Price: ₨10,000– ₨12,000
+Highlight: Long-lasting battery for DSLR cameras</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Nikon EN-EL15 Battery.jpg" alt="Camera 42">
+            <div class="card-content">
+                <p> Nikon EN-EL15 Battery
+Type: Camera Battery
+Capacity: 1900mAh
+Price: ₨11,000– ₨13,000
+Highlight: Reliable power for long shoots</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Sony NP-FZ100 Battery.jpg" alt="Camera 43">
+            <div class="card-content">
+                <p>Sony NP-FZ100 Battery
+Type: Camera Battery
+Capacity: 2280mAh
+Price: ₨12,000– ₨14,000
+Highlight: High capacity for mirrorless cameras</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Panasonic DMW-BLF19 Battery.jpg" alt="Camera 44">
+            <div class="card-content">
+                <p>Panasonic DMW-BLF19 Battery
+Type: Camera Battery
+Capacity: 1860mAh
+Price: ₨10,000– ₨12,000
+Highlight: Perfect for Panasonic mirrorless cameras</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Universal Battery Charger.jpg" alt="Camera 45">
+            <div class="card-content">
+                <p> Universal Battery Charger
+Type: Charger
+Compatibility: Multiple brands
+Price: ₨3,000– ₨5,000
+Highlight: Charges different batteries easily</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Dual Battery Charger.jpg" alt="Camera 46">
+            <div class="card-content">
+                <p> Dual Battery Charger
+Type: Charger
+Compatibility: Specific models
+Price: ₨4,000– ₨6,000
+Highlight: Charges two batteries simultaneously</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+       <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/Power Bank 20000mAh.jpg" alt="Camera 47">
+            <div class="card-content">
+                <p> Power Bank 20000mAh
+Type: Power Bank
+Output: USB-C / USB-A
+Price: ₨4,000– ₨6,000
+Highlight: Backup power for long outdoor shoots</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Batteries & Chargers">
+            <img src="images/Accesories images/Accesories images/Batteries & Chargers/External Battery Pack.jpg" alt="Camera 48">
+            <div class="card-content">
+                <p> External Battery Pack
+Type: External Power
+Capacity: 30000mAh
+Price: ₨6,000– ₨8,000
+Highlight: Ideal for extended shooting sessions
+</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+  <h2>Cables & Adapters</h2>      
+     <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/HDMI Cable.jpg" alt="Camera 49">
+            <div class="card-content">
+                <p> HDMI Cable
+Type: HDMI Cable
+Length: 2m
+Price: ₨1,500– ₨2,500
+Highlight: High-speed video transfer</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/USB-C Cable.jpg" alt="Camera 50">
+            <div class="card-content">
+                <p> USB-C Cable
+Type: USB-C Cable
+Length: 1.5m
+Price: ₨1,000– ₨1,500
+Highlight: Fast charging & data transfer</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/HDMI to USB Capture.jpg" alt="Camera 51">
+            <div class="card-content">
+                <p>HDMI to USB Capture
+Type: Video Capture
+Compatibility: PC/Laptop
+Price: ₨4,000– ₨6,000
+Highlight: Live streaming from DSLR/mirrorless</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/USB Card Reader.jpg" alt="Camera 52">
+            <div class="card-content">
+                <p> USB Card Reader
+Type: Card Reader
+Compatibility: SD / MicroSD
+Price: ₨1,500– ₨2,500
+Highlight: Fast data transfer</p>
+               <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/Camera to PC Cable.jpg" alt="Camera 53">
+            <div class="card-content">
+                <p> Camera to PC Cable
+Type: Data Cable
+Compatibility: DSLR/Mirrorless
+Price: ₨1,200– ₨1,800
+Highlight: Easy file transfer to PC</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/Lens Adapter.jpg" alt="Camera 54">
+            <div class="card-content">
+                <p> Lens Adapter
+Type: Lens Mount Adapter
+Compatibility: Different mounts
+Price: ₨3,000– ₨5,000
+Highlight: Use old lenses on new cameras</p>
+                <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+       <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/USB Hub.jpg" alt="Camera 55">
+            <div class="card-content">
+                <p> USB Hub
+Type: USB Hub
+Ports: 4 ports
+Price: ₨1,500– ₨2,500
+Highlight: Connect multiple devices at onc</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Cables & Adapters">
+            <img src="images/Accesories images/Accesories images/Cables & Adapters/Power Adapter.jpg" alt="Camera 56">
+            <div class="card-content">
+                <p> Power Adapter
+Type: Power Adapter
+Compatibility: Camera
+Price: ₨2,000– ₨3,000
+Highlight: Continuous power for studio shooting
+</p>
+                 <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+
+<h2> Miscellaneous Accessories</h2>
+     <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/Canon-Remote-Switch-RS-80N3.jpg" alt="Camera 57">
+            <div class="card-content">
+                <p>Remote Shutter Release
+Type: Remote Control
+Compatibility: DSLR/Mirrorless
+Price: ₨2,000– ₨3,000
+Highlight: Prevents camera shake during long exposure</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/423-37005-01072015120017.jpg" alt="Camera 58">
+            <div class="card-content">
+                <p> Camera Strap
+Type: Strap
+Material: Nylon/Leather
+Price: ₨1,000– ₨1,500
+Highlight: Comfortable & strong for daily use</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/81OwoVudptL.jpg" alt="Camera 59">
+            <div class="card-content">
+                <p> Memory Card Wallet
+Type: Storage Wallet
+Capacity: 10 cards
+Price: ₨800– ₨1,200
+Highlight: Safe storage for memory cards</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/41arO0T-TeL_6c2287ae-81ba-44b4-ae24-8ffddc433b3a.webp" alt="Camera 60">
+            <div class="card-content">
+                <p> Screen Protector
+Type: Camera Screen Protector
+Size: Universal
+Price: ₨500– ₨800
+Highlight: Protects screen from scratches</p>
+                   <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="pMiscellaneous Accessoriesentax">
+            <img src="images/Accesories images/Accesories images/gps303.jpg" alt="Camera 61">
+            <div class="card-content">
+                <p> GPS Tracker
+Type: Tracker
+Use: Camera tracking
+Price: ₨3,000– ₨4,000
+Highlight: Prevents loss of expensive gear</p>
+                    <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/5a7358b84cdfc2d091b5ba598ea5a444.jpg_720x720q80.jpg" alt="Camera 62">
+            <div class="card-content">
+                <p> Camera Grip
+Type: Camera Grip
+Compatibility: DSLR
+Price: ₨2,000– ₨3,000
+Highlight: Better handling for long shoots</p>
+                     <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+       <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/images.jpg" alt="Camera 63">
+            <div class="card-content">
+                <p> Camera Mount
+Type: Mount
+Use: Car/Tripod mount
+Price: ₨1,500– ₨2,500
+Highlight: Stable mounting for videos</p>
+                  <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+
+            </div>
+        </div>
+
+        <div class="product-card" data-category="Miscellaneous Accessories">
+            <img src="images/Accesories images/Accesories images/camrade_cam_raincvr_engefp_universal_rain_protection_cover_1701368.jpg" alt="Camera 64">
+            <div class="card-content">
+                <p> Camera Rain Cover
+Type: Rain Protection
+Size: Universal
+Price: ₨2,000– ₨3,000
+Highlight: Protects camera in rain</p>
+                   <div class="buttons">
+  <!-- DETAILS (DOWNLOAD LINK) -->
+  <a href="pdf document\Canon EOS 902.pdf" download class="btn buy">
+    Details
+  </a>
+
+  <!-- ADD TO CART -->
+  <button type="button" class="btn cart" onclick="addToCart(this)">
+    Add to Cart
+  </button>
+
+  <!-- BUY NOW -->
+  <button type="button" class="btn buy-now" onclick="buyNow(this)">
+    Buy Now
+  </button>
+</div>
+            </div>
+        </div>
+            <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>FotoLab is your one-stop shop for cameras, lenses, and accessories. We provide high-quality products for
+            photography enthusiasts and professionals.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="Index.html">Home</a><br>
+          <a href="cameras.html">Products</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-column">
+          <h3>Categories</h3>
+          <a href="cameras.html">DSLR Cameras</a><br>
+          <a href="cameras.html">Mirrorless Cameras</a><br>
+          <a href="cameras.html">Action Cameras</a><br>
+          <a href="cameras.html">Accessories</a>
+        </div>
+
+        <!-- Social & Contact -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p style="margin-top:15px;" ><a href="mailto:info@fotolab.com">
+
+         Email: info@fotolab.com </a><br>Phone: +123 456 7890</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="footer-bottom">
+        &copy; 2026 FotoLab. All Rights Reserved.
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let cartCount = 0;
+
+    function addToCart(button) {
+      cartCount++;
+
+      // Update cart count text
+      const countEl = document.getElementById("count");
+      const cartCountEl = document.getElementById("cartCount");
+
+      if (countEl) countEl.textContent = cartCount;
+      if (cartCountEl) cartCountEl.textContent = cartCount;
+
+      // Button feedback
+      button.innerText = "Added ✔";
+      button.disabled = true;
+      button.style.background = "#16a34a";
+    }
+  </script>
+  <script>
+    function buyNow(button) {
+      const card = button.closest(".product-card");
+      if (!card) return;
+
+      const text = card.querySelector(".card-content p")?.innerText || "";
+
+      const product = {
+        description: text
+      };
+
+      localStorage.setItem("buyNowItem", JSON.stringify(product));
+      window.location.href = "checkout.html";
+    }
+  </script>
+
+
+
+  <script>
+    // Navbar scroll shadow
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Cart counter (works on every page)
+
+    const cartBadge = document.getElementById("cartCount");
+
+    document.querySelectorAll(".btn-primary").forEach(btn => {
+      btn.addEventListener("click", function () {
+        cartCount++;
+        cartBadge.textContent = cartCount;
+      });
+    });
+
+    // Dropdown hover on desktop
+    if (window.innerWidth > 992) {
+      document.querySelectorAll(".dropdown").forEach(drop => {
+        drop.addEventListener("mouseenter", function () {
+          this.classList.add("show");
+          this.querySelector(".dropdown-menu").classList.add("show");
+        });
+        drop.addEventListener("mouseleave", function () {
+          this.classList.remove("show");
+          this.querySelector(".dropdown-menu").classList.remove("show");
+        });
+      });
+    }
+  </script>
+  <script>
+    // Hover dropdown for desktop
+    document.querySelectorAll('.navbar .dropdown').forEach(function (dropdown) {
+      dropdown.addEventListener('mouseenter', function () {
+        if (window.innerWidth > 992) {
+          dropdown.classList.add('show');
+          dropdown.querySelector('.dropdown-menu').classList.add('show');
+        }
+      });
+
+      dropdown.addEventListener('mouseleave', function () {
+        if (window.innerWidth > 992) {
+          dropdown.classList.remove('show');
+          dropdown.querySelector('.dropdown-menu').classList.remove('show');
+        }
+      });
+    });
+  </script>
+  <button id="darkToggle" class="dark-toggle">
+    <span id="toggleIcon">🌙</span>
+  </button>
+
+
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    const icon = document.getElementById("toggleIcon");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.add("dark-transition");
+
+      setTimeout(() => {
+        document.body.classList.toggle("dark");
+
+        // Icon animation
+        if (document.body.classList.contains("dark")) {
+          icon.textContent = "🌞";
+          icon.style.transform = "rotate(360deg)";
+        } else {
+          icon.textContent = "🌙";
+          icon.style.transform = "rotate(-360deg)";
+        }
+
+        document.body.classList.remove("dark-transition");
+      }, 150);
+    });
+  </script>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Active button
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const category = card.dataset.category;
+
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.classList.remove('hide');
+              card.classList.add('show');
+            }, 10);
+          } else {
+            card.classList.remove('show');
+            card.classList.add('hide');
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+  </script>
+
+<script>
+
+
+  function addToCart(button) {
+    console.log("Add to Cart clicked");
+
+    cartCount++;
+
+    const navCount = document.getElementById("cartCount");
+    const pageCount = document.getElementById("count");
+
+    if (navCount) navCount.textContent = cartCount;
+    if (pageCount) pageCount.textContent = cartCount;
+
+    button.innerText = "Added ✔";
+    button.disabled = true;
+  }
+
+  function buyNow(button) {
+    console.log("Buy Now clicked");
+    alert("Buy Now works!");
+  }
+</script>
+
+
+</body>
+</html>
